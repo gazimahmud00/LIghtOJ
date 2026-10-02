@@ -1,0 +1,43 @@
+#include<stdio.h>
+int main()
+{
+    int T,row,column,n;
+    scanf("%d",&T);
+
+
+       for(int i=1;i<=T;i++)
+    {
+        scanf("%d",&n);
+
+
+
+
+        for( row=1;row<=n;row++)
+        {
+            for(column=1;column<=n;column++)
+
+            {
+                printf("*");
+            }
+
+
+            printf("\n");
+
+        }
+
+        if (i < T)
+        {
+            printf("\n");
+        }
+
+
+    }
+
+
+
+    return 0;
+}
+
+
+
+
