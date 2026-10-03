@@ -1,0 +1,31 @@
+#include<stdio.h>
+int main()
+{
+    int T,rem=0,sum=0,temp,a,digit=0;
+
+    scanf("%d",&T);
+
+    for(int i=1;i<=T;i++)
+    {
+        scanf("%d",&a);
+        temp=a;
+        int fdigit=temp%10;
+        while(temp>=10)
+        {
+           temp=temp/10;
+        }
+
+        int ldigit=temp;
+        sum=fdigit+ldigit;
+
+        printf("Sum = %d\n",sum);
+
+
+
+
+    }
+
+
+
+    return 0;
+}
