@@ -1,0 +1,28 @@
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+    int T,a;
+    scanf("%d",&T);
+
+
+       for(int i=1;i<=T;i++)
+    {
+        scanf("%d",&a);
+        int value=a;
+        int b=sqrt(a);
+        if( b*b==value)
+            printf("YES\n");
+            else
+            printf("NO\n");
+
+
+
+    }
+
+
+
+
+    return 0;
+}
+
