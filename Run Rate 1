@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+int main()
+{
+    int T;
+    if (scanf("%d", &T) != 1) return 0;
+
+    for (int i = 0; i < T; i++)
+    {
+        double r1, r2, B;
+        scanf("%lf %lf %lf", &r1, &r2, &B);
+
+      
+        double crr = (r2 * 6.0) / (300.0 - B);
+        
+        
+        double rrr = 0.0;
+        
+       
+        if (r2 < r1 + 1.0) {
+            rrr = ((r1 + 1.0 - r2) * 6.0) / B;
+        }
+
+        printf("%.2f %.2f\n", crr, rrr);
+    }
+
+    return 0;
+}
